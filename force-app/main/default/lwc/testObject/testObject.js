@@ -9,9 +9,6 @@ import CHECKBOX_FIELD from '@salesforce/schema/TestCustomObject__c.TestCheckboxV
 
 import { subscribe, onError } from 'lightning/empApi';
 
-import getObject from '@salesforce/apex/TestObjectRetriever.getObject';
-
-
 export default class TestObject extends LightningElement {
 
  @api recordId;
