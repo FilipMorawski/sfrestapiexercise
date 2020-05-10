@@ -1,2 +1,13 @@
 <template>
+        <template if:true={object}>
+            <lightning-card  title="Details">
+                    <p class="slds-p-horizontal_small">Name : {object.Name}</p></br>
+
+                    <p class="slds-p-horizontal_small">Number value : {object.NumberValue__c}</p></br>
+
+                    <p class="slds-p-horizontal_small">Checkbox value : {object.TestCheckboxValue__c}</p></br>
+
+                    <p class="slds-p-horizontal_small">Picklist value : {object.TestPicklistValue__c}</p></br>
+            </lightning-card>
+        </template>
 </template>
