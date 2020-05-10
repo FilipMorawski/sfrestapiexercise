@@ -23,9 +23,6 @@
         <componentInstances>
             <componentName>testObject</componentName>
         </componentInstances>
-        <componentInstances>
-            <componentName>force:detailPanel</componentName>
-        </componentInstances>
         <name>main</name>
         <type>Region</type>
     </flexiPageRegions>
