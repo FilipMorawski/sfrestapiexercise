@@ -23,7 +23,7 @@ In this task it was mention to use standard REST API - that's why i haven't buil
 
 Clone the repository https://github.com/FilipMorawski/sfrestapiexercise.git </br>
 
-Next you should create scratch org and deploy code into it by paste 
+Next you should create scratch org and deploy code into it by paste this script to the terminal
 
 sfdx force:org:create -f config\project-scratch-def.json -a FM_SCRATCH
 sfdx force:source:push -u FM_SCRATCH
@@ -31,7 +31,7 @@ sfdx force:apex:execute -u FM_SCRATCH -f scripts\generateSampleObjects.apex
 sfdx force:org:open -u FM_SCRATCH
 sfdx force:org:open -u FM_SCRATCH
 
-to the terminal. Those actions should create sfdx scratch org, deploy code to it and create test objects.
+Those actions should create sfdx scratch org, deploy code to it and create test objects.
 
 Before that you should checkout from branch with solution that you chose.
 
@@ -40,4 +40,12 @@ Before that you should checkout from branch with solution that you chose.
 3. lwcApexSolution
 
 and then execute scripts mentioned before.
+After that user should create password by using: 
+
+<p> sfdx force:user:password:generate -u FM_SCRATCH </p>
+
+With generated password user is able to login into workbench https://workbench.developerforce.com/login.php and execute standard sf REST Api requests.
+
+<p> Navigation path to TestObject__c record page: 
+<p> Enter TestApp from App menu --> TestCustomObjects tab --> find record from the list --> enter the record detail page. View should be refreshed on every database update dml.
 
